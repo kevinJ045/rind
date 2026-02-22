@@ -1,0 +1,16 @@
+[package]
+name = "rind"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+once_cell = "*"
+sdlang = "*"
+glob = "*"
+nix = { version = "*", features = ["process", "acct", "term", "poll", "signal", "mount"] }
+libc = "*"
+
+[profile.release]
+lto = true
+panic = "abort"
+strip = true
