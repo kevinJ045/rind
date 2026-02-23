@@ -24,7 +24,7 @@ nix = { version = "*", features = ["process", "acct", "term", "poll", "signal", 
 libc = "*"
 serde = { version = "*", features = ["derive"] }
 anyhow = "*"
-clap = "*"
+clap = { version = "*", features = ["derive"] }
 
 [profile.release]
 lto = true

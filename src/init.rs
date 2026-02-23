@@ -7,6 +7,7 @@ use libc;
 use nix::mount::{MsFlags, mount};
 mod config;
 mod daemon;
+mod messaging;
 mod services;
 
 fn spawn_tty(tty_path: &str) -> Option<Child> {

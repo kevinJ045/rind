@@ -86,7 +86,7 @@ if [ "$RUN" -eq 1 ]; then
 	    qemu-system-x86_64 \
 	        -kernel "$BZIMAGE" \
 	        -initrd "$CPIO" \
-	        -append "console=tty1 init=/bin/$RUST_INIT"
+	        -append "console=ttyS0 init=/bin/$RUST_INIT"
 	        # -nographic
 	fi
 fi
