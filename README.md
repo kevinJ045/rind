@@ -21,3 +21,7 @@ Inside of `builder.toml`, you can configure settings for how you want the builde
 ## Build Commands
 
 To get help, you can just execute the builder executable without any arguments and it will print help.
+
+## Devenv
+
+There's a flake.nix, but as of now it only builds and sets up the builder. So, once you do `direnv allow` you have the builder command available.
